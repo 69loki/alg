@@ -1,0 +1,110 @@
+#user defined two matrices
+
+import numpy as np
+
+print("First matrix:")
+r1 = int(input("Enter number of rows: "))
+c1 = int(input("Enter number of columns: "))
+list1 = []
+
+for i in range(r1):
+    row = []
+    for j in range(c1):
+        a = int(input(f"Input the element for [{i+1}, {j+1}]: "))
+        row.append(a)
+    list1.append(row)
+
+matrix1 = np.array(list1)
+print("First matrix:\n", matrix1)
+
+print("Second matrix:")
+r2 = int(input("Enter number of rows: "))
+c2 = int(input("Enter number of columns: "))
+list2 = []
+
+for i in range(r2):
+    row = []
+    for j in range(c2):
+        a = int(input(f"Input the element for [{i+1}, {j+1}]: "))
+        row.append(a)
+    list2.append(row)
+
+matrix2 = np.array(list2)
+print("Second matrix:\n", matrix2)
+
+
+#addition of two matrices 
+
+
+import numpy as np
+
+# Assume s and l are already defined as two matrices
+# For demonstration, I'll create example matrices
+
+s = np.array([[1, 2], [3, 4]])  # Example matrix s
+l = np.array([[5, 6], [7, 8]])  # Example matrix l
+#user defined two matrices
+
+import numpy as np
+
+print("First matrix:")
+r1 = int(input("Enter number of rows: "))
+c1 = int(input("Enter number of columns: "))
+list1 = []
+
+for i in range(r1):
+    row = []
+    for j in range(c1):
+        a = int(input(f"Input the element for [{i+1}, {j+1}]: "))
+        row.append(a)
+    list1.append(row)
+
+matrix1 = np.array(list1)
+print("First matrix:\n", matrix1)
+
+print("Second matrix:")
+r2 = int(input("Enter number of rows: "))
+c2 = int(input("Enter number of columns: "))
+list2 = []
+
+for i in range(r2):
+    row = []
+    for j in range(c2):
+        a = int(input(f"Input the element for [{i+1}, {j+1}]: "))
+        row.append(a)
+    list2.append(row)
+
+matrix2 = np.array(list2)
+print("Second matrix:\n", matrix2)
+
+
+#addition of two matrices 
+
+
+import numpy as np
+
+# Assume s and l are already defined as two matrices
+# For demonstration, I'll create example matrices
+
+s = np.array([[1, 2], [3, 4]])  # Example matrix s
+l = np.array([[5, 6], [7, 8]])  # Example matrix l
+
+if s.shape == l.shape:
+    print("The addition of the two matrices is:")
+    print(s + l)
+else:
+    print("Cannot perform addition; matrices shapes are not the same.")
+
+#MULTIPLICATION OF TWO MATRICES 
+
+
+
+if s.shape == l.shape:
+    print("The addition of the two matrices is:")
+    print(s + l)
+else:
+    print("Cannot perform addition; matrices shapes are not the same.")
+
+#MULTIPLICATION OF TWO MATRICES 
+
+
