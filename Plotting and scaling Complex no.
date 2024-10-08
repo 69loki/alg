@@ -39,3 +39,32 @@ plt.grid()
 plt.axhline(0, color='black',linewidth=0.5, ls='--')
 plt.axvline(0, color='black',linewidth=0.5, ls='--')
 plt.show()
+
+
+
+#3rd
+
+import matplotlib.pyplot as plt
+
+c_num = complex(input("Enter the first complex number (e.g., 1+2j): "))
+print("The given complex number is:", c_num)
+
+x = c_num.real
+y = c_num.imag
+
+plt.plot(x, y, 'ro', label='Given Complex Number')
+plt.xlabel('Real')
+plt.ylabel('Imaginary')
+plt.title('Complex Number Plot')
+plt.grid()
+
+data = [1 + 2j, -1 + 4j, -4, 4 + 3j, 2 - 1j, 3j, -2 - 4j, 5]
+
+x_data = [num.real for num in data]
+y_data = [num.imag for num in data]
+
+plt.scatter(x_data, y_data, label='Sample Complex Numbers')
+plt.axhline(0, color='black', linewidth=0.5, ls='--')
+plt.axvline(0, color='black', linewidth=0.5, ls='--')
+plt.legend()
+plt.show()
