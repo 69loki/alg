@@ -1,0 +1,41 @@
+import matplotlib.pyplot as plt
+data = [1+2j, -1+1j, 4+3j, -4+0j, 2-1j, 3+0j, 2+6j, 5+0j]
+x = [x.real for x in data]
+y = [x.imag for x in data]
+plt.scatter(x, y)
+plt.ylabel('Imaginary')
+plt.xlabel('Real')
+plt.show()
+
+#REAL
+
+import matplotlib.pyplot as plt
+
+def complex_no():
+    a = float(input("Enter real part: "))
+    b = float(input("Enter imaginary part: "))
+    return complex(a, b)
+
+# Get a complex number from the user
+c_num = complex_no()
+
+# Print the real and imaginary parts
+print("The real part of c_num:", c_num.real)
+print("The imaginary part of c_num:", c_num.imag)
+
+# Create data of complex numbers
+data = [1 + 2j, -1 + 4j, -4, 4 + 3j, 2 - 1j, 3j, -2 - 4j, 5]
+
+# Extract real and imaginary parts
+x = [num.real for num in data]
+y = [num.imag for num in data]
+
+# Plot the complex numbers
+plt.scatter(x, y)
+plt.xlabel('Real')
+plt.ylabel('Imaginary')
+plt.title('Complex Number Plot')
+plt.grid()
+plt.axhline(0, color='black',linewidth=0.5, ls='--')
+plt.axvline(0, color='black',linewidth=0.5, ls='--')
+plt.show()
