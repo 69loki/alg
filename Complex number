@@ -1,0 +1,41 @@
+x = int(input("Enter real part: "))
+y = int(input("Enter imaginary part: "))
+
+z = complex(x, y)
+print("The Complex number is:", z)
+
+def complex_no():
+    a = int(input("Enter real part: "))
+    b = int(input("Enter imaginary part: "))
+    z = complex(a, b)
+    return z
+
+z = complex_no()
+print(z)
+
+def complex_no():
+    a = int(input("Enter real part: "))
+    b = int(input("Enter imaginary part: "))
+    z = complex(a, b)
+    return z
+
+z1 = complex_no()
+print(z1)
+
+z2 = complex(6, 0)
+
+print("The addition is:", z1 + z2)
+print("The subtraction is:", z1 - z2)
+print("The multiplication is:", z1 * z2)
+print("The division is:", z1 / z2)
+
+
+#REAL PART IMAGINARY PART 
+def complex_no():
+    a = int(input("Enter real part: "))
+    b = int(input("Enter imaginary part: "))
+    z = complex(a, b)
+    return z
+
+z1 = complex_no()
+print("The Conjugate of z1:", z1.conjugate())
