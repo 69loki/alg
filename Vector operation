@@ -1,0 +1,50 @@
+#i)
+
+n = int(input("Give number of coordinates: "))
+print("First vector:")
+U = [int(input("Give the coordinate: ")) for i in range(n)]
+print("U:", U)
+
+print("Second vector:")
+V = [int(input("Give the coordinate: ")) for i in range(n)]
+print("V:", V)
+
+#ii) additiona of the vectors 
+
+def add_vect(v, u):
+    add = []
+    for i in range(len(v)):
+        s = v[i] + u[i]
+        add.append(s)
+    return add
+
+u = [1, 2, 3]  # Example vector U
+v = [4, 5, 6]  # Example vector V
+
+print("Addition of two vectors:", add_vect(u, v))
+
+
+#iii) Scalar Multiplication 
+
+def multivect(v):
+    scalar = int(input("Type any scalar: "))
+    multi = []
+    for i in range(len(v)):
+        multi.append(v[i] * scalar)
+    return multi
+
+v = [1, 2, 3]  # Example vector
+print("Scalar multiplication of vector:", multivect(v))
+ 
+#iv)dot product u and v
+
+def dot_product(v, w):
+    dot = 0
+    for i in range(len(v)):
+        dot += v[i] * w[i]
+    return dot
+
+v = [1, 2, 3]  # Example vector v
+w = [4, 5, 6]  # Example vector w
+
+print("Dot product of two vectors:", dot_product(v, w))
