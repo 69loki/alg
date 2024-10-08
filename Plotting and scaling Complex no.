@@ -68,3 +68,52 @@ plt.axhline(0, color='black', linewidth=0.5, ls='--')
 plt.axvline(0, color='black', linewidth=0.5, ls='--')
 plt.legend()
 plt.show()
+
+
+
+#4th
+
+import matplotlib.pyplot as plt
+
+c_num = complex(input("Enter the first complex number (e.g., 1+2j): "))
+print("The given complex number is:", c_num)
+
+x = c_num.real
+y = c_num.imag
+
+plt.plot(x, y, 'ro', label='Given Complex Number')
+plt.ylabel('Imaginary')
+plt.xlabel('Real')
+plt.grid()
+
+data1 = 1 + 2j
+x_data1 = data1.real
+y_data1 = data1.imag
+plt.plot(x_data1, y_data1, 'g', label='Data 1')
+
+data2 = -1 + 2j
+x_data2 = data2.real
+y_data2 = data2.imag
+plt.plot(x_data2, y_data2, 'y', label='Data 2')
+
+plt.legend()
+plt.show()
+
+
+#5th
+
+import matplotlib, pyplot as plt
+2= Complex Ciput Center the first Complex number'))
+printl The given complex number 's", 2)
+a = int Ciput Ci Given as scabr
+2. real
+y= 2. imag
+plt.ylabel (x,y,y)
+plt.xlabel Cireal")
+plt.gridc)
+data 1 za x
+= datal real
+y = datal imag
+plt.plot(xy b*)
+plt.show()
+
